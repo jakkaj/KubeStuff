@@ -16,8 +16,26 @@ https://medium.com/@JockDaRock/minikube-on-windows-10-with-hyper-v-6ef0f4dc158c
 
 - Check dynamic memory enabled on the VM in hyperv
 
-`minikube start`
+
 
 `kubectl get pods -n kube-system`
 
 `minikube dashboard`
+
+
+
+# Node
+https://kubernetes.io/docs/tutorials/stateless-application/hello-minikube/
+
+
+- Ensure using minikube docker 
+`kubectl config use-context minikube`
+
+`minikube docker-env` (which will spit back further instructions - e.g. ` & minikube docker-env | Invoke-Expression`)
+
+`docker build -t hello-node:v1 .`
+
+
+# On Azure Tutorial 
+
+https://docs.microsoft.com/en-us/azure/aks/tutorial-kubernetes-prepare-app
